@@ -1,0 +1,116 @@
+.modal-header button {
+  border: none;
+  background: none;
+  font-size: 22px;
+}
+
+#projectForm {
+  display: grid;
+  gap: 17px;
+}
+
+#projectForm button {
+  margin-top: 5px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .admin-layout {
+    grid-template-columns: 200px 1fr;
+  }
+
+  .admin-main {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    height: auto;
+    padding: 20px;
+  }
+
+  .sidebar-label {
+    margin-top: 25px;
+  }
+
+  .sidebar nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar-bottom {
+    margin-top: 20px;
+  }
+
+  .admin-main {
+    padding: 20px;
+  }
+
+  .admin-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-admin-entry,
+  .education-admin-entry {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-admin-entry .full {
+    grid-column: auto;
+  }
+
+  .admin-project {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.photo-upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-top: 20px;
+}
+
+#profilePhotoPreview {
+    width: 160px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 18px;
+    background: #EDE6DD;
+    border: 1px solid rgba(27, 20, 22, 0.1);
+}
+
+#photoUploadStatus {
+    color: #6E1F2F;
+    font-size: 13px;
+}
+/* Project thumbnail upload controls */
+.project-image-upload { display: grid; gap: 10px; margin: 10px 0 18px; }
+.project-image-upload label { font-weight: 600; }
+.project-image-upload input[type="file"] { padding: 10px; border: 1px solid rgba(27,20,22,.15); border-radius: 10px; background: #fff; }
+.project-image-preview { display: block; width: min(100%, 320px); aspect-ratio: 1.35; object-fit: cover; border-radius: 12px; border: 1px solid rgba(27,20,22,.12); }
+.project-image-preview[hidden] { display: none; }
+.project-image-upload small { color: #9a8f89; font-size: 12px; }

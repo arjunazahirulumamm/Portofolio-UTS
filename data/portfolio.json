@@ -1,0 +1,123 @@
+{
+    "profile": {
+        "name": "Arjuna Zahirul Umam",
+        "role": "Informatics Student",
+        "bio": "Mahasiswa Informatika yang terus belajar, bereksplorasi, dan membangun sesuatu melalui teknologi.",
+        "about": "Saya adalah seorang mahasiswa Informatika yang menikmati eksplorasi pemrograman, basis data, pengembangan web, dan teknologi. Saat ini sedang belajar dengan membangun proyek kecil dan bereksperimen dengan ide-ide.",
+        "location": "Indonesia",
+        "email": "arjuna@example.com",
+        "photo": "uploads/profile.jpeg"
+    },
+    "projects": [
+        {
+            "id": 1,
+            "title": "Parking Management System",
+            "description": "Sebuah proyek basis data yang dirancang untuk mengelola transaksi parkir kendaraan, area parkir, petugas, serta data kendaraan.",
+            "year": "2026",
+            "image": "uploads/projects/project_1.png",
+            "techStack": [
+                "MySQL",
+                "Database Design",
+                "SQL"
+            ],
+            "demoUrl": "",
+            "repoUrl": ""
+        },
+        {
+            "id": 2,
+            "title": "Library System",
+            "description": "Proyek ini adalah sistem perpustakaan sederhana yang dibangun menggunakan struktur data kamus (dictionary) dengan konsep pasangan key-value (kunci-nilai). Dalam sistem ini, setiap data buku disimpan dengan menghubungkan kode unik sebagai Key (seperti ID Buku atau ISBN) dengan detail informasi buku sebagai Value (seperti judul buku, penulis, tahun terbit, dan status peminjaman).\nPenggunaan model key-value memungkinkan proses pencarian, penambahan, pembaruan, dan penghapusan data (CRUD) berjalan jauh lebih cepat dan efisien karena sistem dapat langsung memanggil data berdasarkan key-nya tanpa harus mengecek data satu per satu.",
+            "year": "2025",
+            "image": "uploads/projects/project_2.jpg",
+            "techStack": [
+                "Python"
+            ],
+            "demoUrl": "",
+            "repoUrl": ""
+        }
+    ],
+    "skills": [
+        {
+            "category": "Frontend",
+            "items": [
+                "HTML",
+                "CSS",
+                "JavaScript"
+            ]
+        },
+        {
+            "category": "Backend & Database",
+            "items": [
+                "Python",
+                "Flask",
+                "MySQL"
+            ]
+        },
+        {
+            "category": "Tools",
+            "items": [
+                "Git",
+                "GitHub",
+                "VS Code"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "MI Awaliyah Kedung Harjo",
+            "degree": "Sekolah Dasar",
+            "period": "2012 — 2018"
+        },
+        {
+            "institution": "SMP IT Darussalam",
+            "degree": "Sekolah Menengah",
+            "period": "2018 — 2021"
+        },
+        {
+            "institution": "MA Permata Darussalam",
+            "degree": "Sekolah Menengah Atas",
+            "period": "2021 — 2024"
+        },
+        {
+            "institution": "Universitas Nahdlatul Ulama",
+            "degree": "S1 Informatika",
+            "period": "2025 — Present"
+        }
+    ],
+    "experience": [
+        {
+            "role": "Proyek Database Sistem Parkir",
+            "company": "Proyek Perkuliahan",
+            "period": "2026",
+            "description": "Merancang database sistem parkir kendaraan mulai dari ERD, pembuatan tabel, hingga pengolahan data menggunakan SQL."
+        },
+        {
+            "role": "Membangun Website Portfolio",
+            "company": "Proyek Personal",
+            "period": "2026",
+            "description": "Membuat website portfolio pribadi menggunakan Flask, HTML, CSS, dan JavaScript. Mengembangkan tampilan website serta fitur pengelolaan data melalui dashboard admin."
+        },
+        {
+            "role": "Praktikum Jaringan Komputer",
+            "company": "Proyek Perkuliahan",
+            "period": "2026",
+            "description": "Mempelajari konfigurasi jaringan, subnetting, dan konsep OSI Layer melalui praktik dan pengerjaan tugas perkuliahan."
+        },
+        {
+            "role": "Wakil Ketua Osim",
+            "company": "Organisasi",
+            "period": "2023 - 2024",
+            "description": "Membantu mengsukseskan semua kegiatan Madrasah Diniyah"
+        }
+    ],
+    "socials": [
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/"
+        },
+        {
+            "platform": "Instagram",
+            "url": "https://instagram.com/"
+        }
+    ]
+}

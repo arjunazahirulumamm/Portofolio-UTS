@@ -1,0 +1,191 @@
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  padding: 18px 24px;
+
+  background: var(--accent);
+  color: white;
+
+  border-radius: 999px;
+
+  font-size: 14px;
+
+  transition:
+    transform 0.25s,
+    background 0.25s,
+    box-shadow 0.25s;
+}
+
+.button-primary:hover {
+  background: #84283c;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px #6e1f2f20;
+}
+
+.button-primary span {
+  transition: transform 0.2s;
+}
+
+.button-primary:hover span {
+  transform: translate(4px, 4px);
+}
+
+.text-link {
+  font-size: 14px;
+  color: var(--accent);
+  transition: opacity 0.2s;
+}
+
+.text-link:hover {
+  opacity: 0.65;
+}
+
+/* =========================================
+   HERO VISUAL
+========================================= */
+
+.hero-visual {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 1;
+
+  background: #e9ded1;
+  border-radius: 34px;
+
+  overflow: hidden;
+
+  transform: perspective(1000px) rotateX(var(--tilt-x, 0deg))
+    rotateY(var(--tilt-y, 0deg));
+
+  transition: transform 0.3s ease;
+}
+
+.visual-label {
+  position: absolute;
+  z-index: 3;
+
+  font-size: 10px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+  line-height: 1.5;
+
+  color: #77655d;
+}
+
+.top-left {
+  top: 28px;
+  left: 28px;
+}
+
+.top-right {
+  top: 28px;
+  right: 28px;
+  color: var(--accent);
+}
+
+.bottom-left {
+  bottom: 28px;
+  left: 28px;
+}
+
+.visual-art {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+
+  transition: transform 0.25s ease;
+}
+
+.art-circle {
+  position: relative;
+
+  width: 48%;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: #702035;
+
+  box-shadow:
+    inset 0 0 0 22px #8c4657,
+    inset 0 0 0 44px #702035,
+    inset 0 0 0 58px #a05d6d;
+}
+
+.shape-one,
+.shape-two {
+  position: absolute;
+
+  border: 1px solid #a17a80;
+  border-radius: 50%;
+}
+
+.shape-one {
+  width: 58%;
+  aspect-ratio: 1;
+}
+
+.shape-two {
+  width: 40%;
+  aspect-ratio: 1;
+}
+
+.circle-label {
+  position: absolute;
+
+  right: 13%;
+  top: 49%;
+
+  display: grid;
+  place-items: center;
+
+  width: 85px;
+  aspect-ratio: 1;
+
+  border-radius: 50%;
+
+  background: var(--bg);
+  border: 1px solid #dac8bf;
+
+  color: var(--accent);
+
+  font-family: var(--heading);
+  font-size: 13px;
+  font-weight: 800;
+
+  transform: rotate(8deg);
+
+  transition: transform 0.3s;
+}
+
+.hero-visual:hover .circle-label {
+  transform: rotate(-7deg) scale(1.06);
+}
+
+.visual-star {
+  position: absolute;
+  bottom: 25px;
+  right: 28px;
+
+  font-size: 30px;
+}

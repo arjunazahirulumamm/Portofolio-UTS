@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Portfolio — Arjuna</title>
+
+    {% for stylesheet in ['css/base.css', 'css/navigation-hero.css', 'css/projects.css', 'css/sections.css', 'css/effects.css', 'css/responsive.css'] %}
+    <link rel="stylesheet" href="{{ url_for('static', filename=stylesheet) }}" />
+    {% endfor %}
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    {% include "partials/index/navbar.html" %}
+    {% include "partials/index/hero.html" %}
+    {% include "partials/index/marquee.html" %}
+    {% include "partials/index/work.html" %}
+    {% include "partials/index/about.html" %}
+    {% include "partials/index/stack.html" %}
+    {% include "partials/index/journey.html" %}
+    {% include "partials/index/contact.html" %}
+    {% include "partials/index/footer.html" %}
+  </body>
+</html>

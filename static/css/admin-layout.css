@@ -1,0 +1,111 @@
+
+.admin-main {
+  padding: 45px;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 25px;
+  margin-bottom: 45px;
+}
+
+.admin-eyebrow {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: 1.4px;
+  font-weight: 700;
+}
+
+.admin-header h1 {
+  font-size: 36px;
+  margin-top: 10px;
+  letter-spacing: -1.5px;
+}
+
+.auth-box {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-box input {
+  width: 150px;
+}
+
+input,
+textarea {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+
+  padding: 12px;
+  outline: none;
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px #6e1f2f12;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.admin-section {
+  margin-bottom: 70px;
+  scroll-margin-top: 30px;
+}
+
+.welcome-panel {
+  background: var(--accent);
+  color: white;
+  border-radius: 15px;
+
+  padding: 35px;
+}
+
+.welcome-panel p {
+  color: #d5b6bc;
+  font-size: 10px;
+  letter-spacing: 1.4px;
+}
+
+.welcome-panel h2 {
+  font-size: 30px;
+  margin-top: 12px;
+}
+
+.welcome-panel span {
+  display: block;
+  color: #e5cfd2;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+/* STATS */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+
+  margin-top: 20px;
+}
+
+.stat {
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+
+  padding: 22px;
+}
+
+.stat span {
+  display: block;
+}

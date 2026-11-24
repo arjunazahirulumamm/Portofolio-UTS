@@ -1,0 +1,59 @@
+<div class="modal" id="projectModal">
+      <div class="modal-panel">
+        <div class="modal-header">
+          <h2 id="modalTitle">New project</h2>
+          <button type="button" id="closeModal">✕</button>
+        </div>
+
+        <form id="projectForm">
+          <input type="hidden" name="id" />
+
+          <label>
+            Project title
+            <input name="title" required />
+          </label>
+
+          <label>
+            Year
+            <input name="year" />
+          </label>
+
+          <label>
+            Description
+            <textarea name="description" rows="4" required></textarea>
+          </label>
+
+          <label>
+            Image path
+            <input name="image" placeholder="images/project.png" />
+          </label>
+
+          <div class="project-image-upload">
+            <label for="projectImageFile">Upload project thumbnail</label>
+            <input type="file" id="projectImageFile" accept="image/png,image/jpeg,image/webp" />
+            <img id="projectImagePreview" class="project-image-preview" alt="Project image preview" hidden />
+            <small id="projectImageStatus">Pilih gambar untuk mengganti thumbnail project.</small>
+          </div>
+
+          <label>
+            Tech stack
+            <input name="techStack" placeholder="Python, Flask, MySQL" />
+          </label>
+
+          <label>
+            Demo URL
+            <input name="demoUrl" />
+          </label>
+
+          <label>
+            Repository URL
+            <input name="repoUrl" />
+          </label>
+
+          <button class="primary-btn" type="submit">Save project</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+  

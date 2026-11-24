@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Portfolio Dashboard</title>
+
+    {% for stylesheet in ['css/admin-base.css', 'css/admin-layout.css', 'css/admin-projects.css', 'css/admin-forms.css', 'css/admin-responsive.css'] %}
+    <link rel="stylesheet" href="{{ url_for('static', filename=stylesheet) }}" />
+    {% endfor %}
+  </head>
+  <body>
+    <div class="admin-layout">
+      <aside class="sidebar">
+        <a href="/" class="admin-logo">arjuna<span>.</span></a>
+
+        <p class="sidebar-label">WORKSPACE</p>
+        <nav aria-label="Dashboard sections">
+          <a class="sidebar-link" href="#overview">Overview</a>
+          <a class="sidebar-link" href="#projects">Projects</a>
+          <a class="sidebar-link" href="#profile">Profile</a>
+          <a class="sidebar-link" href="#education">Education</a>
+          <a class="sidebar-link" href="#experience">Experience</a>
+          <a class="sidebar-link" href="#skills">Skills</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <a href="/">View website ↗</a>
+        </div>
+      </aside>
+
+      <main class="admin-main">
+        <header class="admin-header">
+          <div>
+            <p class="admin-eyebrow">PORTFOLIO MANAGEMENT</p>
+            <h1>Dashboard</h1>
+          </div>
+
+          <div class="auth-box">
+            <input id="adminKey" type="password" placeholder="Admin key" />
+            <button class="primary-btn" id="saveKey" type="button">
+              Open dashboard
+            </button>
+          </div>
+        </header>
+
+        <section id="overview" class="admin-section">
+          <div class="welcome-panel">
+            <p>WORKSPACE</p>
+            <h2>Manage your portfolio</h2>
+            <span>Update your content and publish it to the portfolio website.</span>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat">
+              <span>PROJECTS</span>
+              <strong id="projectCount">0</strong>
+            </div>
+            <div class="stat">
+              <span>SKILL GROUPS</span>
+              <strong id="skillCount">0</strong>
+            </div>
+          </div>
+        </section>
+
+        {% include "partials/admin/project-management.html" %}
+        {% include "partials/admin/profile.html" %}
+        {% include "partials/admin/education.html" %}
+        {% include "partials/admin/experience.html" %}
+        {% include "partials/admin/skills.html" %}
+      </main>
+    </div>
+
+    {% include "partials/admin/project-modal.html" %}
+  </body>
+</html>
